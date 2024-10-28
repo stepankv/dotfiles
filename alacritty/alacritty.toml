@@ -9,8 +9,7 @@ padding.y = 5
 
 dimensions.columns = 145
 dimensions.lines = 40
-
-decorations = "Buttonless"
+decorations = "None"
 option_as_alt = "Both"
 
 [font]
