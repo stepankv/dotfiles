@@ -8,6 +8,7 @@ config_dir="${XDG_CONFIG_HOME:-$HOME/.config}"
 declare -a dotfiles=(
   "alacritty"
   "lazygit"
+  "nvim"
   "yazi"
   "zellij"
   "zsh"
@@ -35,4 +36,3 @@ fi
 for dotfile in "${dotfiles[@]}"; do
   ln -sfn "$(pwd)/$dotfile" "$config_dir/$dotfile"
 done
-ln -sfn "$(pwd)/dotfiles.nvim" "$config_dir/nvim"
