@@ -14,15 +14,38 @@ rules = [
 ]
 
 [input]
-border = { fg = "#1E1F22" }
+border = { fg = "#6F737A", bg = "#2B2D30" }
 title = { fg = "#DFE1E5" }
-value = { bg = "#393B40" }
+
+[completion]
+border = { fg = "#6F737A", bg = "#2B2D30" }
+title = { fg = "#DFE1E5" }
+icon_folder = ""
+
+[tasks]
+border = { fg = "#6F737A" }
+title = { fg = "#DFE1E5" }
+
+[which]
+mask = { bg = "#1E2022" }
+cand = { fg = "#6F737A" }
+desc = { fg = "#BCBEC4" }
+separator_style = { fg = "#6F737A" }
+
+[notify]
+title_info = { fg = "#3592C4" }
+title_warn = { fg = "#F2C55C" }
+title_error = { fg = "#FA6675" }
+icon_info = ""
+icon_warn = ""
+icon_error = ""
 
 [icon]
 prepend_dirs = [
-	{ name = ".config", text = "" },
+	{ name = ".config", text = "󱂀" },
 	{ name = ".git", text = "󰊢" },
 ]
 prepend_conds = [
+    { if = "link", text = "" },
     { if = "dir", text = "" },
 ]
