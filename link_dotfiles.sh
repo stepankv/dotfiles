@@ -13,6 +13,7 @@ declare -a dotfiles=(
   "zellij"
   "zsh"
   "starship.toml"
+  ".fzfrc"
 )
 
 check_if_dotfiles_symliks() {

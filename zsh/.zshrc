@@ -5,7 +5,10 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # External scripts
 source "$ZDOTDIR/aliases.zsh"
 source "$ZDOTDIR/functions.zsh"
+# Enable starship prompt
 eval "$(starship init zsh)"
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # Fix fistory on Ubuntu
 HISTFILE="$ZDOTDIR/.zsh_history"

@@ -1,0 +1,2 @@
+--preview='bat --color=always {}'
+--walker-skip='.git,node_modules,build,target,.idea,.gradle'
