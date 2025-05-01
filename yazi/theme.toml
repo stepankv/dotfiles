@@ -1,3 +1,4 @@
 [flavor]
-use = "jetbrains-dark"
+dark = "jetbrains-dark"
+light = "jetbrains-dark"
 

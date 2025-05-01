@@ -3,11 +3,6 @@ cwd = { fg = "#7A7E85" }
 border_style = { fg = "#1E1F22" }
 hovered = { bg = "#2E436E" }
 
-[status]
-mode_normal = { hidden = true }
-mode_select = { hidden = true }
-mode_unset = { hidden = true }
-
 [filetype]
 rules = [
    { name = "*/", fg = "#DFE1E5" }
