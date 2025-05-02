@@ -1,0 +1,15 @@
+[[cmp.prepend_keymap]]
+desc = "Next item"
+on   = "<C-j>"
+run  = "arrow next"
+
+[[cmp.prepend_keymap]]
+desc = "Previous item"
+on   = "<C-k>"
+run  = "arrow prev"
+
+# Plugins
+[[manager.prepend_keymap]]
+desc = "run lazygit"
+on   = [ "g", "i" ]
+run  = "plugin lazygit"

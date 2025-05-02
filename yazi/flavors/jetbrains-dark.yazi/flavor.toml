@@ -5,16 +5,16 @@ hovered = { bg = "#2E436E" }
 
 [filetype]
 rules = [
-   { name = "*/", fg = "#DFE1E5" }
+  { name = "*/", fg = "#DFE1E5" }
 ]
 
 [input]
 border = { fg = "#6F737A", bg = "#2B2D30" }
 title = { fg = "#DFE1E5" }
 
-[completion]
+[cmp]
 border = { fg = "#6F737A", bg = "#2B2D30" }
-title = { fg = "#DFE1E5" }
+active = { bg = "#2E436E" }
 icon_folder = ""
 
 [tasks]
@@ -27,6 +27,10 @@ cand = { fg = "#6F737A" }
 desc = { fg = "#BCBEC4" }
 separator_style = { fg = "#6F737A" }
 
+[confirm]
+title = { fg = "#DFE1E5" }
+border = { fg = "#6F737A", bg = "#2B2D30" }
+
 [notify]
 title_info = { fg = "#3592C4" }
 title_warn = { fg = "#F2C55C" }
@@ -36,11 +40,11 @@ icon_warn = ""
 icon_error = ""
 
 [icon]
-prepend_dirs = [
-	{ name = ".config", text = "󱂀" },
-	{ name = ".git", text = "󰊢" },
+append_dirs = [
+  { name = ".config", text = "󱂀" },
+  { name = ".git", text = "󰊢" },
 ]
 prepend_conds = [
-    { if = "link", text = "" },
-    { if = "dir", text = "" },
+  { if = "link", text = "" },
+  { if = "dir", text = "" },
 ]
