@@ -31,6 +31,12 @@ separator_style = { fg = "#6F737A" }
 title = { fg = "#DFE1E5" }
 border = { fg = "#6F737A", bg = "#2B2D30" }
 
+[spot]
+title = { fg = "#DFE1E5" }
+border = { fg = "#6F737A", bg = "#2B2D30" }
+tbl_col = { fg = "#7A7E85" }
+tbl_cell = { bg = "#2E436E" }
+
 [notify]
 title_info = { fg = "#3592C4" }
 title_warn = { fg = "#F2C55C" }
