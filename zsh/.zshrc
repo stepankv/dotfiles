@@ -7,8 +7,9 @@ source "$ZDOTDIR/aliases.zsh"
 source "$ZDOTDIR/functions.zsh"
 # Enable starship prompt
 eval "$(starship init zsh)"
-# Set up fzf key bindings and fuzzy completion
+# Set up fzf: key bindings, fuzzy completion and theme
 source <(fzf --zsh)
+source "$XDG_CONFIG_HOME/fzf/darcula-theme.sh"
 
 # Fix fistory on Ubuntu
 HISTFILE="$ZDOTDIR/.zsh_history"

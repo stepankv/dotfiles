@@ -1,0 +1,8 @@
+--preview='bat --color=always {}'
+--walker-skip='.git,node_modules,build,target,.idea,.gradle'
+
+# https://vitormv.github.io/fzf-themes/
+--info='right'
+--prompt=' '
+--marker=''
+--pointer="█"
