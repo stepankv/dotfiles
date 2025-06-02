@@ -9,7 +9,7 @@ on   = "<C-k>"
 run  = "arrow prev"
 
 # Plugins
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 desc = "run lazygit"
 on   = [ "g", "i" ]
 run  = "plugin lazygit"

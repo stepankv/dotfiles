@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 cwd = { fg = "#7A7E85" }
 border_style = { fg = "#1E1F22" }
 hovered = { bg = "#2E436E" }
@@ -46,7 +46,7 @@ icon_warn = ""
 icon_error = ""
 
 [icon]
-append_dirs = [
+prepend_dirs = [
   { name = ".config", text = "󱂀" },
   { name = ".git", text = "󰊢" },
 ]
