@@ -1,9 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-## Creates or updates existing symlink to dotfiles in ~/.config directory.
-## Before linking, checks if existing files already symlinks.
-## Otherwise stops execution.
+set -eu
 
+# Clone dotfiles repository and change cwd.
+mkdir -p "$HOME/workbench"
+cd "${HOME}/workbench"
+[[ -d dotfiles ]] || git clone -q --recurse-submodules git@github.com:bost367/dotfiles.git
+cd dotfiles
+
+# Create links in user's configuration directory.
 config_dir="${XDG_CONFIG_HOME:-$HOME/.config}"
 declare -a dotfiles=(
   "alacritty"
@@ -28,12 +33,17 @@ check_if_dotfiles_symliks() {
   done
 }
 
+# Check if existing files already symlinks before link them.
 if [ -d "$config_dir" ]; then
   check_if_dotfiles_symliks
 else
   mkdir -p "$config_dir"
 fi
 
+# Create or update existing symlink to dotfiles.
 for dotfile in "${dotfiles[@]}"; do
   ln -sfn "$(pwd)/$dotfile" "$config_dir/$dotfile"
 done
+
+ya pkg install                    # Install yazi plugins.
+nvim --headless "+Lazy! sync" +qa # Install neovim plugins.
