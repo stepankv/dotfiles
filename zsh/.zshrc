@@ -15,11 +15,12 @@ eval "$(starship init zsh)"
 source <(fzf --zsh)
 source "$XDG_CONFIG_HOME/fzf/darcula-theme.sh"
 
-# Fix fistory on Ubuntu
 HISTFILE="$ZDOTDIR/.zsh_history"
 SAVEHIST=10000
-# Delete old recorded entry if new entry is a duplicate.
-setopt HIST_IGNORE_ALL_DUPS
+HISTSIZE=10000
+setopt HIST_IGNORE_ALL_DUPS   # Delete old recorded entry if new entry is a duplicate.
+setopt EXTENDED_HISTORY       # Record timestamp of command in HISTFILE
+setopt SHARE_HISTORY          # Share command history between sessions
 
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
