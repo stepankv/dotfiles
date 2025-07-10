@@ -25,6 +25,10 @@ setopt SHARE_HISTORY          # Share command history between sessions
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
 
+# Disable swithc to vi style keybindings.
+# https://www.reddit.com/r/zsh/comments/p8ir7r/how_to_disable_vi_style_keybinds_in_zsh/
+bindkey -e
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
