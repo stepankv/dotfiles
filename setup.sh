@@ -10,6 +10,7 @@ cd dotfiles
 
 # Create links in user's configuration directory.
 config_dir="${XDG_CONFIG_HOME:-$HOME/.config}"
+mkdir -p "$config_dir"
 declare -a dotfiles=(
   "alacritty"
   "lazygit"
@@ -26,8 +27,8 @@ check_if_dotfiles_symliks() {
     local dotfile="$config_dir/$file"
     if [ -e "$dotfile" ]; then
       if [ ! -L "$dotfile" ]; then
-        echo "file/directory '$file' is not a simlink. move/remove it and run script again." 1>&2
-        exit 1
+        echo "file/directory '$file' is not a simlink. backup '$dotfile.bak' will be created." 1>&2
+        mv "$dotfile" "$dotfile.bak"
       fi
     fi
   done
@@ -47,3 +48,4 @@ done
 
 ya pkg install                    # Install yazi plugins.
 nvim --headless "+Lazy! sync" +qa # Install neovim plugins.
+echo "Completed cloning dotfiles!"
