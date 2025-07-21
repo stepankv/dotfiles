@@ -48,4 +48,5 @@ done
 
 ya pkg install                    # Install yazi plugins.
 nvim --headless "+Lazy! sync" +qa # Install neovim plugins.
+echo ""
 echo "Completed cloning dotfiles!"
