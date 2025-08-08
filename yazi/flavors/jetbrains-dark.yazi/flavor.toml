@@ -1,3 +1,5 @@
+#:schema https://yazi-rs.github.io/schemas/theme.json
+
 [mgr]
 cwd = { fg = "#7A7E85" }
 border_style = { fg = "#1E1F22" }
@@ -5,7 +7,7 @@ hovered = { bg = "#2E436E" }
 
 [filetype]
 rules = [
-  { name = "*/", fg = "#DFE1E5" }
+  { name = "*/", fg = "#DFE1E5" },
 ]
 
 [input]
