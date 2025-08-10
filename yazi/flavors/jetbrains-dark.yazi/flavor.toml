@@ -1,8 +1,8 @@
 #:schema https://yazi-rs.github.io/schemas/theme.json
 
 [mgr]
-cwd = { fg = "#7A7E85" }
-border_style = { fg = "#1E1F22" }
+cwd = { fg = "#6F737A" }
+border_style = { fg = "#393B41" }
 hovered = { bg = "#2E436E" }
 
 [filetype]
@@ -11,31 +11,31 @@ rules = [
 ]
 
 [input]
-border = { fg = "#6F737A", bg = "#2B2D30" }
+border = { fg = "#393B41", bg = "#1E1F22" }
 title = { fg = "#DFE1E5" }
 
 [cmp]
-border = { fg = "#6F737A", bg = "#2B2D30" }
+border = { fg = "#393B41", bg = "#1E1F22" }
 active = { bg = "#2E436E" }
 icon_folder = ""
 
 [tasks]
-border = { fg = "#6F737A" }
+border = { fg = "#393B41", bg = "#1E1F22" }
 title = { fg = "#DFE1E5" }
 
 [which]
-mask = { bg = "#1E2022" }
+mask = { bg = "#2B2D30" }
 cand = { fg = "#6F737A" }
 desc = { fg = "#BCBEC4" }
 separator_style = { fg = "#6F737A" }
 
 [confirm]
 title = { fg = "#DFE1E5" }
-border = { fg = "#6F737A", bg = "#2B2D30" }
+border = { fg = "#393B41", bg = "#1E1F22" }
 
 [spot]
 title = { fg = "#DFE1E5" }
-border = { fg = "#6F737A", bg = "#2B2D30" }
+border = { fg = "#393B41", bg = "#1E1F22" }
 tbl_col = { fg = "#7A7E85" }
 tbl_cell = { bg = "#2E436E" }
 
