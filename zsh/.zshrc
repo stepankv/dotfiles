@@ -12,8 +12,8 @@ source "$ZDOTDIR/functions.zsh"
 # Enable starship prompt
 eval "$(starship init zsh)"
 # Set up fzf: key bindings, fuzzy completion and theme
+source "$XDG_CONFIG_HOME/fzf/fzf.sh"
 source <(fzf --zsh)
-source "$XDG_CONFIG_HOME/fzf/darcula-theme.sh"
 
 HISTFILE="$ZDOTDIR/.zsh_history"
 SAVEHIST=10000
