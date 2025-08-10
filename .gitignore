@@ -1,5 +1,6 @@
 zsh/.zsh_sessions/
 zsh/.zsh_history
 zsh/.zcompdump
+zsh/.zcompcache
 yazi/plugins/
 *.log
