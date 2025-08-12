@@ -1,0 +1,26 @@
+--no-column
+--max-columns=150
+--max-columns-preview
+
+# See hidden files
+--hidden
+
+# Case insensitively search if the search pattern is all lowecase.
+# Otherwise case sensitively.
+--smart-case
+
+# Patterns to include/exclude files or folders
+--glob=!.git/*
+--glob=!.cache/*
+--glob=!.gradle/.tmp/*
+--glob=!.gradle/caches/*
+--glob=!.kube/cache/*
+--glob=!.npm/_cache/*
+--glob=!Library/Caches/*
+
+# Color pallete
+--colors=path:fg:0xdf,0xe1,0xe5
+--colors=line:fg:0x6f,0x73,0x7a
+--colors=column:fg:0x6f,0x73,0x7a
+--colors=match:fg:0x00,0x00,0x00
+--colors=match:bg:0xBA,0x97,0x52

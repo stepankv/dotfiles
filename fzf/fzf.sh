@@ -7,7 +7,7 @@ export FZF_DEFAULT_OPTS="
 # https://vitormv.github.io/fzf-themes/
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS"
   --color=fg:#DFE1E5,fg+:#d0d0d0,bg:-1,bg+:#2E436E
-  --color=hl:#FFC15E,hl+:#FFC15E,info:#6F737A,marker:#548AF7
+  --color=hl:#BA9752,hl+:#BA9752,info:#6F737A,marker:#548AF7
   --color=prompt:#4E8052,spinner:#548AF7,pointer:#5c8ff6,header:#6F737A
   --color=gutter:#1E2022,border:#393B41,separator:#393B41,scrollbar:#525355
   --color=preview-bg:#1E2022,preview-border:#393B41,preview-scrollbar:#525355,label:#6F737A
@@ -19,7 +19,13 @@ export FZF_DEFAULT_COMMAND="fd \
   --color never \
   --type file \
   --type symlink \
-  --exclude .git"
+  --exclude '.git/*' \
+  --exclude '.cache/*' \
+  --exclude '.gradle/.tmp/*' \
+  --exclude '.gradle/caches/*' \
+  --exclude '.kube/cache/*' \
+  --exclude '.npm/_cache/*' \
+  --exclude 'Library/Caches/*'"
 
 # https://github.com/junegunn/fzf/discussions/3803
 # Find files
@@ -46,4 +52,3 @@ fif() (
     --preview-window='right,border-left,~3' \
     --query "$*"
 )
-

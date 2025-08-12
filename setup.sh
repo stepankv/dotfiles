@@ -20,6 +20,7 @@ declare -a dotfiles=(
   "zsh"
   "starship.toml"
   "fzf"
+  ".ripgreprc"
 )
 
 check_if_dotfiles_symliks() {
