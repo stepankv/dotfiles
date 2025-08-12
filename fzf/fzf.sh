@@ -1,6 +1,4 @@
 export FZF_DEFAULT_OPTS="
-  --preview='bat --color=always {}'
-  --preview-window='right,border-left'
   --info='right'
   --prompt=' '
   --marker=''

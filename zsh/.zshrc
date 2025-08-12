@@ -7,8 +7,8 @@ source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # External scripts
-source "$ZDOTDIR/aliases.zsh"
-source "$ZDOTDIR/functions.zsh"
+source "$ZDOTDIR/aliases.sh"
+source "$ZDOTDIR/functions.sh"
 # Enable starship prompt
 eval "$(starship init zsh)"
 # Set up fzf: key bindings, fuzzy completion and theme
