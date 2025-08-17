@@ -19,7 +19,7 @@ format = "[$symbol ]($style)"
 disabled = false
 
 [directory]
-read_only = " 󰌾"
+read_only = " "
 style = "white"
 truncate_to_repo = false
 

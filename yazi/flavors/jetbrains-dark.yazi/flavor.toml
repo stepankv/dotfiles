@@ -4,6 +4,7 @@
 cwd = { fg = "#6F737A" }
 border_style = { fg = "#393B41" }
 hovered = { bg = "#2E436E" }
+preview_hovered = { bg = "#43454B" }
 
 [filetype]
 rules = [
