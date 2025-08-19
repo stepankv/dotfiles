@@ -1,7 +1,6 @@
 add_newline = false
 palette = "darkula_dark"
 format = """
-$os\
 $username\
 $hostname\
 $directory\
@@ -16,15 +15,19 @@ $character"""
 
 [os]
 format = "[$symbol ]($style)"
+style = "icon"
 disabled = false
 
 [directory]
-read_only = " "
-style = "white"
+style = "gray"
 truncate_to_repo = false
+truncation_symbol = '…/'
+read_only = " "
+read_only_style = "gray"
 
 [fill]
-style = "gray"
+style = "separator"
+symbol = "─"
 
 [character]
 success_symbol = "[](green)"
@@ -35,7 +38,7 @@ vimcmd_replace_symbol = "[](blue)"
 vimcmd_visual_symbol = "[](blue)"
 
 [git_branch]
-format = "[$symbol$branch(:$remote_branch)]($style)"
+format = "[$symbol$branch(:$remote_branch) ]($style)"
 symbol = " "
 style = "gray"
 
@@ -51,7 +54,8 @@ format = "[$duration]($style)"
 style = "gray"
 
 [palettes.darkula_dark]
-white = "#DFE1E5"
+icon = "#CED0D6"
+separator = "#393B40"
 blue = "#3975F1"
 gray = "#6F737A"
 green = "#4E8052"
