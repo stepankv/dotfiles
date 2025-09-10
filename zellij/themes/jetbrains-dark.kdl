@@ -1,15 +1,50 @@
 themes {
     jetbrains-dark {
-        fg "#909399"
-        bg "#2E3440"
-        black "#1E2022"
-        red "#BF616A"
-        green "#3975F1"
-        yellow "#EBCB8B"
-        blue "#81A1C1"
-        magenta "#DB5C5C"
-        cyan "#88C0D0"
-        white "#E5E9F0"
-        orange "#D08770"
+        text_unselected {
+            base "#6F737A"        // 'Zellij' title & 'Ctrl +'
+            background "#1E1F22"  // arrows between buttons (LOCK, PANE, TAB...)
+            emphasis_0 "#A1A3AB"  // 'Alt +' hint and left arrow in select mode
+            emphasis_1 "#00FF00"
+            emphasis_2 "#BCBEC4"  // letters inside buttons (<g>, <p>, <t>...) after button press
+            emphasis_3 "#00FF00"
+        }
+        text_selected {
+            base "#6F737A"
+            background "#1E1F22"
+            emphasis_0 "#00FF00"
+            emphasis_1 "#00FF00"
+            emphasis_2 "#00FF00"
+            emphasis_3 "#00FF00"
+        }
+        ribbon_unselected {
+            base "#1E1F22"
+            background "#5A5D63" // buttons (LOCK, PANE, TAB...)
+            emphasis_0 "#BCBEC4" // letters inside buttons (<g>, <p>, <t>...)
+            emphasis_1 "#00FF00"
+            emphasis_2 "#00FF00"
+            emphasis_3 "#00FF00"
+        }
+        ribbon_selected {
+            base "#1E1F22"
+            background "#A1A3AB" // active tab
+            emphasis_0 "#DFE1E5" // leter inside button after action selected
+            emphasis_1 "#00FF00"
+            emphasis_2 "#00FF00"
+            emphasis_3 "#00FF00"
+        }
+        frame_unselected {
+            base "#393B40"
+            emphasis_0 "#00FF00"
+            emphasis_1 "#00FF00"
+            emphasis_2 "#00FF00"
+            emphasis_3 "#00FF00"
+        }
+        frame_selected {
+            base "#393B40"
+            emphasis_0 "#00FF00"
+            emphasis_1 "#00FF00"
+            emphasis_2 "#00FF00"
+            emphasis_3 "#00FF00"
+        }
     }
 }
