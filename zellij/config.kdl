@@ -1,3 +1,4 @@
+theme "jetbrains-dark"
 default_layout "compact"
 pane_frames false
 show_startup_tips false
@@ -8,4 +9,10 @@ ui {
     }
 }
 
-theme "jetbrains-dark"
+keybinds {
+    normal {
+      bind "Alt t" { NewTab; }
+      bind "Alt ]" { GoToNextTab; }
+      bind "Alt [" { GoToPreviousTab; }
+    }
+}
