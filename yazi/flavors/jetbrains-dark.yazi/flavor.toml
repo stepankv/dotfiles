@@ -6,6 +6,12 @@ border_style = { fg = "#393B41" }
 hovered = { bg = "#2E436E" }
 preview_hovered = { bg = "#43454B" }
 
+[tabs]
+active = { bg = "#A1A3AB", fg = "#1E1F22", bold = true }
+inactive = { bg = "#5A5D63", fg = "#1E1F22", bold = true }
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
 [filetype]
 rules = [
   { name = "*/", fg = "#DFE1E5" },
