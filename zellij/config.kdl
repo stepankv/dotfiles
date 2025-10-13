@@ -11,8 +11,21 @@ ui {
 
 keybinds {
     normal {
-      bind "Alt t" { NewTab; }
-      bind "Alt ]" { GoToNextTab; }
-      bind "Alt [" { GoToPreviousTab; }
+      unbind "Alt k"
+      unbind "Alt j"
+      unbind "Alt h"
+      unbind "Alt l"
+      unbind "Alt Up"
+      unbind "Alt Down"
+      unbind "Alt Left"
+      unbind "Alt Right"
+
+      bind "Shift Alt k" { MoveFocus "Up"; }
+      bind "Shift Alt j" { MoveFocus "Down"; }
+      bind "Shift Alt h" { MoveFocus "Left"; }
+      bind "Shift Alt l" { MoveFocus "Right"; }
+      bind "Shift Alt t" { NewTab; }
+      bind "Shift Alt ]" { GoToNextTab; }
+      bind "Shift Alt [" { GoToPreviousTab; }
     }
 }
