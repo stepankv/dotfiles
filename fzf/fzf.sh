@@ -32,7 +32,7 @@ export FZF_DEFAULT_COMMAND="fd \
 ff() {
   fzf \
     --bind "enter:become:$EDITOR {1}" \
-    --preview='bat --color=always {}' \
+    --preview='bat --color=always --theme=TwoDark {}' \
     --preview-window='right,border-left,~3' \
     --query "$*"
 }
