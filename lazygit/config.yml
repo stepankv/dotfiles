@@ -18,6 +18,6 @@ git:
   paging:
     colorArg: "always"
     pager: "delta --paging=never"
-  branchLogCmd: "git log --color=always --date=format-local:'%d%.%m.%Y, %H:%M' --graph --format=format:'%C(white)%<(70,trunc)%s%C(reset) %C(cyan)%<(18,trunc)%an%C(reset)  %cd  %C(yellow)%h%C(reset)'"
+  branchLogCmd: "git log --color=always --date=format-local:'%d.%m.%Y, %H:%M' --graph --format=format:'%C(white)%<(70,trunc)%s%C(reset) %C(cyan)%<(18,trunc)%an%C(reset)  %cd  %C(yellow)%h%C(reset)'"
   parseEmoji: true
 notARepository: "quit"

@@ -10,7 +10,7 @@ import = [
 padding.x = 5
 padding.y = 5
 
-dimensions.columns = 145
+dimensions.columns = 190
 dimensions.lines = 40
 decorations = "Buttonless"
 option_as_alt = "Both"
