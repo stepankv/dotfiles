@@ -49,6 +49,6 @@ for dotfile in "${dotfiles[@]}"; do
 done
 
 ya pkg install                    # Install yazi plugins.
-nvim --headless "+Lazy! sync" +qa # Install neovim plugins.
+nvim --headless "+Lazy! sync" +TSInstallList +qa # Install neovim plugins.
 echo ""
 echo "Completed cloning dotfiles!"
