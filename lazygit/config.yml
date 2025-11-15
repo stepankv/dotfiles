@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
 # https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md
 gui:
   nerdFontsVersion: "3"
@@ -15,9 +16,9 @@ gui:
       - '⣷'
     rate: 90
 git: 
-  paging:
-    colorArg: "always"
-    pager: "delta --paging=never"
+  pagers:
+    - colorArg: "always"
+      pager: "delta --paging=never"
   branchLogCmd: "git log --color=always --date=format-local:'%d.%m.%Y, %H:%M' --graph --format=format:'%C(white)%<(70,trunc)%s%C(reset) %C(cyan)%<(18,trunc)%an%C(reset)  %cd  %C(yellow)%h%C(reset)'"
   parseEmoji: true
 notARepository: "quit"

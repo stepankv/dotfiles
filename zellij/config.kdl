@@ -11,15 +11,16 @@ ui {
 
 keybinds {
     normal {
+      unbind "Alt n"
       unbind "Alt k"
       unbind "Alt j"
       unbind "Alt h"
       unbind "Alt l"
-      unbind "Alt n"
       unbind "Alt Up"
       unbind "Alt Down"
       unbind "Alt Left"
       unbind "Alt Right"
+      unbind "Ctrl o"
 
       bind "Shift Alt n" { NewPane; }
       bind "Shift Alt k" { MoveFocus "Up"; }
