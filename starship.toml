@@ -1,3 +1,5 @@
+#:schema https://starship.rs/config-schema.json
+
 add_newline = false
 palette = "darkula_dark"
 format = """
@@ -55,7 +57,7 @@ style = "gray"
 
 [palettes.darkula_dark]
 icon = "#CED0D6"
-separator = "#393B40"
+separator = "#323438"
 blue = "#3975F1"
 gray = "#6F737A"
 green = "#4E8052"

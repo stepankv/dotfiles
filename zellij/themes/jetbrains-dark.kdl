@@ -33,14 +33,14 @@ themes {
             emphasis_3 "#00FF00"
         }
         frame_unselected {
-            base "#393B40"
+            base "#323438"
             emphasis_0 "#00FF00"
             emphasis_1 "#00FF00"
             emphasis_2 "#00FF00"
             emphasis_3 "#00FF00"
         }
         frame_selected {
-            base "#393B40"
+            base "#323438"
             emphasis_0 "#00FF00"
             emphasis_1 "#00FF00"
             emphasis_2 "#00FF00"

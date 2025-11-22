@@ -2,7 +2,7 @@
 
 [mgr]
 cwd = { fg = "#6F737A" }
-border_style = { fg = "#393B41" }
+border_style = { fg = "#323438" }
 hovered = { bg = "#2E436E" }
 preview_hovered = { bg = "#43454B" }
 
@@ -18,16 +18,16 @@ rules = [
 ]
 
 [input]
-border = { fg = "#393B41", bg = "#1E1F22" }
+border = { fg = "#323438", bg = "#1E1F22" }
 title = { fg = "#DFE1E5" }
 
 [cmp]
-border = { fg = "#393B41", bg = "#1E1F22" }
+border = { fg = "#323438", bg = "#1E1F22" }
 active = { bg = "#2E436E" }
 icon_folder = ""
 
 [tasks]
-border = { fg = "#393B41", bg = "#1E1F22" }
+border = { fg = "#323438", bg = "#1E1F22" }
 title = { fg = "#DFE1E5" }
 
 [which]
@@ -38,11 +38,11 @@ separator_style = { fg = "#6F737A" }
 
 [confirm]
 title = { fg = "#DFE1E5" }
-border = { fg = "#393B41", bg = "#1E1F22" }
+border = { fg = "#323438", bg = "#1E1F22" }
 
 [spot]
 title = { fg = "#DFE1E5" }
-border = { fg = "#393B41", bg = "#1E1F22" }
+border = { fg = "#323438", bg = "#1E1F22" }
 tbl_col = { fg = "#7A7E85" }
 tbl_cell = { bg = "#2E436E" }
 
