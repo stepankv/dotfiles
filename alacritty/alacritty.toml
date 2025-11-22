@@ -2,7 +2,7 @@
 
 [general]
 import = [
-    "~/.config/alacritty/jetbrains_dark.toml",
+    "~/.config/alacritty/island_dark.toml",
     "~/.config/alacritty/keybindings.toml",
 ]
 

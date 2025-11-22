@@ -1,5 +1,5 @@
 themes {
-    jetbrains-dark {
+    island-dark {
         text_unselected {
             base "#6F737A"        // 'Zellij' title & 'Ctrl +'
             background "#1E1F22"  // arrows between buttons (LOCK, PANE, TAB...)
@@ -33,14 +33,14 @@ themes {
             emphasis_3 "#00FF00"
         }
         frame_unselected {
-            base "#323438"
+            base "#313438"
             emphasis_0 "#00FF00"
             emphasis_1 "#00FF00"
             emphasis_2 "#00FF00"
             emphasis_3 "#00FF00"
         }
         frame_selected {
-            base "#323438"
+            base "#313438"
             emphasis_0 "#00FF00"
             emphasis_1 "#00FF00"
             emphasis_2 "#00FF00"

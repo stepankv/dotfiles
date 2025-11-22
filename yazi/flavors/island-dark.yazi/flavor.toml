@@ -2,11 +2,11 @@
 
 [mgr]
 cwd = { fg = "#6F737A" }
-border_style = { fg = "#323438" }
+border_style = { fg = "#313438" }
 
 [tabs]
-active = { bg = "#A1A3AB", fg = "#1E1F22", bold = true }
-inactive = { bg = "#5A5D63", fg = "#1E1F22", bold = true }
+active = { bg = "#A1A3AB", fg = "#191A1C", bold = true }
+inactive = { bg = "#5A5D63", fg = "#191A1C", bold = true }
 sep_inner = { open = "", close = "" }
 sep_outer = { open = "", close = "" }
 
@@ -22,16 +22,16 @@ parent = { bg = "#43454B" }
 preview = { bg = "#43454B" }
 
 [input]
-border = { fg = "#323438", bg = "#1E1F22" }
+border = { fg = "#313438", bg = "#191A1C" }
 title = { fg = "#DFE1E5" }
 
 [cmp]
-border = { fg = "#323438", bg = "#1E1F22" }
+border = { fg = "#313438", bg = "#191A1C" }
 active = { bg = "#2E436E" }
 icon_folder = ""
 
 [tasks]
-border = { fg = "#323438", bg = "#1E1F22" }
+border = { fg = "#313438", bg = "#191A1C" }
 title = { fg = "#DFE1E5" }
 
 [which]
@@ -42,11 +42,11 @@ separator_style = { fg = "#6F737A" }
 
 [confirm]
 title = { fg = "#DFE1E5" }
-border = { fg = "#323438", bg = "#1E1F22" }
+border = { fg = "#313438", bg = "#191A1C" }
 
 [spot]
 title = { fg = "#DFE1E5" }
-border = { fg = "#323438", bg = "#1E1F22" }
+border = { fg = "#313438", bg = "#191A1C" }
 tbl_col = { fg = "#7A7E85" }
 tbl_cell = { bg = "#2E436E" }
 
