@@ -3,5 +3,6 @@ zsh/.zsh_history
 zsh/.zcompdump
 zsh/.zcompcache
 yazi/plugins/
+yazi/vfs.toml
 git/config
 *.log

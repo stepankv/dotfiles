@@ -3,8 +3,6 @@
 [mgr]
 cwd = { fg = "#6F737A" }
 border_style = { fg = "#323438" }
-hovered = { bg = "#2E436E" }
-preview_hovered = { bg = "#43454B" }
 
 [tabs]
 active = { bg = "#A1A3AB", fg = "#1E1F22", bold = true }
@@ -14,8 +12,14 @@ sep_outer = { open = "", close = "" }
 
 [filetype]
 rules = [
-  { name = "*/", fg = "#DFE1E5" },
+  { url = "*/", fg = "#DFE1E5" },
 ]
+
+[indicator]
+padding = { open = "█", close = "█" }
+current = { bg = "#2E436E" }
+parent = { bg = "#43454B" }
+preview = { bg = "#43454B" }
 
 [input]
 border = { fg = "#323438", bg = "#1E1F22" }
