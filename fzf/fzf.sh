@@ -1,7 +1,7 @@
 export FZF_DEFAULT_OPTS="
   --info='right'
   --prompt='  '
-  --marker=''
+  --marker='▌'
   --pointer=' '"
 
 # https://vitormv.github.io/fzf-themes/
