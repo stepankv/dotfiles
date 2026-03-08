@@ -4,5 +4,6 @@ zsh/.zcompdump
 zsh/.zcompcache
 yazi/plugins/
 yazi/vfs.toml
-git/config
+git/
+!git/config
 *.log

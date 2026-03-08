@@ -5,7 +5,7 @@ set -eu
 # Clone dotfiles repository and change cwd.
 mkdir -p "$HOME/workbench"
 cd "${HOME}/workbench"
-[[ -d dotfiles ]] || git clone -q --recurse-submodules git@github.com:bost367/dotfiles.git
+[[ -d dotfiles ]] || git clone -q --recurse-submodules git@github.com:stepankv/dotfiles.git
 cd dotfiles
 
 # Create links in user's configuration directory.

@@ -1,4 +1,4 @@
 [submodule "dotfiles.nvim"]
 	path = nvim
-	url = git@github.com:bost367/dotfiles.nvim.git
+	url = git@github.com:stepankv/dotfiles.nvim.git
 	ignore  = all
