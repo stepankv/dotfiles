@@ -18,6 +18,10 @@ source <(fzf --zsh)
 # Enable yazi shortcut
 source "$XDG_CONFIG_HOME/yazi/wrapper.sh"
 
+# Lazygit configuration files are located in ~/Library/Application Support/lazygit/config.yml on macOS.
+# For a theme stored in a separate file to work correctly, you need to add the path to that file to an environment variable.
+export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$XDG_CONFIG_HOME/lazygit/themes/island_dark.yml"
+
 HISTFILE="$ZDOTDIR/.zsh_history"
 SAVEHIST=10000
 HISTSIZE=10000
