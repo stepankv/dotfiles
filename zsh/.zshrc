@@ -8,7 +8,6 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 
 # External scripts
 source "$ZDOTDIR/aliases.sh"
-source "$ZDOTDIR/functions.sh"
 # Enable starship prompt
 eval "$(starship init zsh)"
 
@@ -17,6 +16,9 @@ source "$XDG_CONFIG_HOME/fzf/defaults.sh"
 source "$XDG_CONFIG_HOME/fzf/theme.sh"
 source "$XDG_CONFIG_HOME/fzf/functions.sh"
 source <(fzf --zsh)
+
+# Enable yazi shortcut
+source "$XDG_CONFIG_HOME/yazi/wrapper.sh"
 
 HISTFILE="$ZDOTDIR/.zsh_history"
 SAVEHIST=10000

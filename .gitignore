@@ -2,7 +2,6 @@ zsh/.zsh_sessions/
 zsh/.zsh_history
 zsh/.zcompdump
 zsh/.zcompcache
-yazi/plugins/
 yazi/vfs.toml
 git/
 !git/config
