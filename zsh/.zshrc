@@ -25,9 +25,6 @@ setopt HIST_IGNORE_ALL_DUPS   # Delete old recorded entry if new entry is a dupl
 setopt EXTENDED_HISTORY       # Record timestamp of command in HISTFILE
 setopt SHARE_HISTORY          # Share command history between sessions
 
-export EDITOR="nvim"
-export VISUAL="$EDITOR"
-
 # Disable switch to vi style keybindings.
 # https://www.reddit.com/r/zsh/comments/p8ir7r/how_to_disable_vi_style_keybinds_in_zsh/
 bindkey -e

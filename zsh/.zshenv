@@ -1,5 +1,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml,$XDG_CONFIG_HOME/lazygit/themes/island_dark.yml"
 export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/.ripgreprc"
 
