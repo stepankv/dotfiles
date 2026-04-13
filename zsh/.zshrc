@@ -6,8 +6,6 @@ command -v brew &> /dev/null && eval "$(brew shellenv)"
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
-# External scripts
-source "$ZDOTDIR/aliases.sh"
 # Enable starship prompt
 eval "$(starship init zsh)"
 
@@ -30,9 +28,16 @@ setopt SHARE_HISTORY          # Share command history between sessions
 export EDITOR="nvim"
 export VISUAL="$EDITOR"
 
-# Disable swithc to vi style keybindings.
+# Disable switch to vi style keybindings.
 # https://www.reddit.com/r/zsh/comments/p8ir7r/how_to_disable_vi_style_keybinds_in_zsh/
 bindkey -e
+
+# Aliases
+alias ls="eza --color=always --long --icons=always --no-user --no-time --no-permissions"
+alias lzd='lazydocker'
+alias gi='lazygit'
+alias zj='zellij'
+alias jt='just'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
