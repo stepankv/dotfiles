@@ -3,12 +3,12 @@ ratio = [2, 3, 4]
 show_hidden = true
 
 [[plugin.prepend_fetchers]]
-id   = "git"
-name = "*"
-run  = "git"
+url   = "*"
+run   = "git"
+group = "git"
 
 [[plugin.prepend_fetchers]]
-id   = "git"
-name = "*/"
-run  = "git"
+url   = "*/"
+run   = "git"
+group = "git"
 
