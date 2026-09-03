@@ -15,10 +15,10 @@ gui:
       - '⣯'
       - '⣷'
     rate: 90
-git: 
-  pagers:
-    - colorArg: "always"
-      pager: "delta --paging=never"
+git:
+  diffRenderers:
+    - command: "delta --paging=never"
+      colorArg: "always"
   branchLogCmd: "git log --color=always --date=format-local:'%d.%m.%Y, %H:%M' --graph --format=format:'%C(white)%<(70,trunc)%s%C(reset) %C(cyan)%<(18,trunc)%an%C(reset)  %cd  %C(yellow)%h%C(reset)'"
   parseEmoji: true
 notARepository: "quit"
