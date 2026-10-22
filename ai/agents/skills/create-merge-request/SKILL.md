@@ -1,6 +1,6 @@
 ---
 name: create-merge-request
-description: >
+description: >-
   Prepares a branch for a merge request by squashing commits and composing the final commit message and MR description.
   Uses the `create-commit-message` skill to compose the final (squashed) commit message.
 ---

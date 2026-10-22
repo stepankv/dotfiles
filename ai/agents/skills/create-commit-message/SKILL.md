@@ -1,6 +1,6 @@
 ---
 name: create-commit-message
-description: >
+description: >-
   Builds a commit message from the changes made in the project, following the
   repository's own rules. Use when the user asks to create, review, or fix a
   commit message, or when preparing a merge request.
