@@ -22,6 +22,7 @@ keybinds {
       unbind "Alt Right"
       unbind "Ctrl o"
 
+      // English layout
       bind "Shift Alt n" { NewPane; }
       bind "Shift Alt k" { MoveFocus "Up"; }
       bind "Shift Alt j" { MoveFocus "Down"; }
@@ -30,5 +31,15 @@ keybinds {
       bind "Shift Alt t" { NewTab; }
       bind "Shift Alt ]" { GoToNextTab; }
       bind "Shift Alt [" { GoToPreviousTab; }
+
+      // Russian layout
+      bind "Shift Alt т" "Alt Т" { NewPane; }
+      bind "Shift Alt л" "Alt Л" { MoveFocus "Up"; }
+      bind "Shift Alt о" "Alt О" { MoveFocus "Down"; }
+      bind "Shift Alt р" "Alt Р" { MoveFocus "Left"; }
+      bind "Shift Alt д" "Alt Д" { MoveFocus "Right"; }
+      bind "Shift Alt е" "Alt Е" { NewTab; }
+      bind "Shift Alt ъ" "Alt Ъ" { GoToNextTab; }
+      bind "Shift Alt х" "Alt Х" { GoToPreviousTab; }
     }
 }
