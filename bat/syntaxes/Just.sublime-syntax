@@ -1,0 +1,150 @@
+%YAML 1.2
+---
+name: Just
+file_extensions: [just, justfile, Justfile, .justfile]
+scope: source.just
+
+variables:
+  identifier: '[A-Za-z_][A-Za-z0-9_-]*'
+
+contexts:
+  main:
+    - include: comments
+    - match: '^\['
+      scope: punctuation.section.annotation.begin.just
+      push: annotation
+    - match: '^(set)\s+({{identifier}})'
+      captures:
+        1: keyword.other.just
+        2: keyword.other.setting.just
+    - match: '^(@?)({{identifier}})(?=[^:\n]*:(?!=))'
+      captures:
+        1: punctuation.definition.recipe.just
+        2: entity.name.function.just
+      push: recipe-header
+    - match: '^(export)\b'
+      scope: keyword.other.just
+    - match: '^(import|mod|alias)\b'
+      scope: keyword.control.just
+    - match: '^([ \t]+)([@?-]*)'
+      captures:
+        2: punctuation.definition.recipe.just
+      push:
+        - meta_scope: meta.recipe.just source.shell
+        - match: '^(?=\S)'
+          pop: true
+        - include: scope:source.shell
+      with_prototype:
+        - include: interpolation
+        - match: '^(?=\S)'
+          pop: true
+    - include: expression
+
+  recipe-header:
+    - match: ':'
+      scope: punctuation.separator.just
+      pop: true
+    - include: strings
+    - match: '{{identifier}}'
+      scope: variable.parameter.just
+    - include: expression
+
+  expression:
+    - include: comments
+    - include: strings
+    - include: interpolation
+    - match: '\b(true|false)\b'
+      scope: constant.language.just
+    - match: '\b[0-9]+(?:\.[0-9]+)?\b'
+      scope: constant.numeric.just
+    - match: '{{identifier}}(?=\s*\()'
+      scope: support.function.builtin.just
+    - match: '{{identifier}}'
+      scope: variable.other.just
+    - match: ':=|==|!=|&&|\|\||[+*/=:-]'
+      scope: keyword.operator.just
+    - match: '[\[\](){},]'
+      scope: punctuation.section.group.just
+
+  annotation:
+    - meta_scope: meta.annotation.just
+    - match: '\]'
+      scope: punctuation.section.annotation.end.just
+      pop: true
+    - include: strings
+    - match: '{{identifier}}(?=\s*=)'
+      scope: variable.parameter.just
+    - match: '{{identifier}}'
+      scope: entity.name.annotation.just
+    - match: '[(),=]'
+      scope: punctuation.separator.just
+
+  interpolation:
+    - match: '\{\{\{\{'
+      scope: constant.character.escape.just
+    - match: '\{\{'
+      scope: punctuation.section.interpolation.begin.just
+      push:
+        - meta_scope: meta.interpolation.just
+        - match: '\}\}'
+          scope: punctuation.section.interpolation.end.just
+          pop: true
+        - include: expression
+
+  strings:
+    - match: '"""'
+      scope: punctuation.definition.string.begin.just
+      push: triple-double-string
+    - match: "'''"
+      scope: punctuation.definition.string.begin.just
+      push: triple-single-string
+    - match: '"'
+      scope: punctuation.definition.string.begin.just
+      push: double-string
+    - match: "'"
+      scope: punctuation.definition.string.begin.just
+      push: single-string
+    - match: '`'
+      scope: punctuation.definition.string.begin.just
+      push: backtick-string
+
+  double-string:
+    - meta_scope: string.quoted.double.just
+    - match: '\\.'
+      scope: constant.character.escape.just
+    - match: '"'
+      scope: punctuation.definition.string.end.just
+      pop: true
+    - include: interpolation
+
+  single-string:
+    - meta_scope: string.quoted.single.just
+    - match: "'"
+      scope: punctuation.definition.string.end.just
+      pop: true
+
+  triple-double-string:
+    - meta_scope: string.quoted.triple.just
+    - match: '\\.'
+      scope: constant.character.escape.just
+    - match: '"""'
+      scope: punctuation.definition.string.end.just
+      pop: true
+    - include: interpolation
+
+  triple-single-string:
+    - meta_scope: string.quoted.triple.just
+    - match: "'''"
+      scope: punctuation.definition.string.end.just
+      pop: true
+
+  backtick-string:
+    - meta_scope: string.quoted.other.just
+    - match: '`'
+      scope: punctuation.definition.string.end.just
+      pop: true
+    - include: interpolation
+
+  comments:
+    - match: '#.*$'
+      scope: comment.line.number-sign.just

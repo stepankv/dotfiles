@@ -8,6 +8,12 @@
 [core]
     autocrlf = input
     pager = delta
+[color "diff"]
+    meta = "bold #6F737A"
+    frag = "#6F737A"
+    context = "#BCBEC4"
+    old = "#BCBEC4 #484A4A"
+    new = "#BCBEC4 #294436"
 [delta]
     minus-style = "syntax" "#484A4A"
     minus-emph-style = "syntax" "#484A4A"
@@ -27,6 +33,6 @@
     hunk-header-style = "omit"
     line-numbers = true
     side-by-side = false
-    syntax-theme = "Coldark-Dark"
+    syntax-theme = "island-dark"
 [include]
     path = company.gitconfig
