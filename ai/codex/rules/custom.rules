@@ -1,0 +1,25 @@
+prefix_rule(
+    pattern=[
+        "git",
+        ["add", "commit", "status", "branch", "diff", "log", "fetch", "rebase"],
+    ],
+    decision="allow",
+)
+
+prefix_rule(
+    pattern=["nix", ["eval", "develop", "build"]],
+    decision="allow",
+)
+
+prefix_rule(
+    pattern=["nix", "flake", ["check", "show", "metadata"]],
+    decision="allow",
+)
+
+prefix_rule(
+    pattern=[
+        "cargo",
+        ["build", "test", "check", "clippy", "fmt", "metadata"],
+    ],
+    decision="allow",
+)
